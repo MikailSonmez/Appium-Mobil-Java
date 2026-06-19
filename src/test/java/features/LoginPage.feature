@@ -19,7 +19,7 @@ Feature: Login Page
     Then user should see empty password message "<emptyPassMessage>"
     Examples:
       | email                  | emptyPassMessage          |
-      | enes.erdogan@gmail.com | Lütfen şifrenizi giriniz. |
+      | mikail.erdogan@gmail.com | Lütfen şifrenizi giriniz. |
 
   @FalseLogin
   Scenario Outline: False Password and Mail
@@ -42,4 +42,4 @@ Feature: Login Page
     Then user should see name "<name>"
     Examples:
       | email                  | password  | name         |
-      | enes.erdgn32@gmail.com | Enes.1995 | Enes Erdoğan |
+      | mikail.erdgn32@gmail.com | mikail.1995 | mikail Erdoğan |
